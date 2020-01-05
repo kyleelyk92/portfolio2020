@@ -1,0 +1,37 @@
+<div class="header-main">
+  <div class="header-item content-left">
+    <button
+      mat-fab
+      style="background-image: url('../../../assets/assets/logo-small.png');
+      background-repeat: no-repeat;
+      background-position: center;"
+      alt=""
+      class="logo"
+    ></button>
+  </div>
+  <div class="header-item content-right">
+    <div class="button-container">
+      <button
+        mat-flat-button
+        routerLinkActive="active-link"
+        [routerLink]="['']"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        I
+      </button>
+      <button
+        [routerLink]="['', 'home']"
+        routerLinkActive="active-link"
+        mat-flat-button
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home Component
+      </button>
+      <button mat-flat-button>Five</button>
+      <button mat-flat-button>Buttons</button>
+      <button mat-flat-button>
+        Lo
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.header-main {
+  width: 100vw;
+  height: 10vh;
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: linear-gradient(#ffd76f, blue);
+}
+.header-main ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  height: 30px;
+}
+.header-main ul li {
+  color: green;
+  margin: 12px;
+  padding-right: 30px;
+  text-align: center;
+  margin: auto;
+}
+.header-main ul li:hover {
+  color: black;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.1em;
+}

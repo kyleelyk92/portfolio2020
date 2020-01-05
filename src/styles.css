@@ -1,0 +1,6 @@
+@import url(~bootstrap/dist/css/bootstrap.min.css);
+body,
+html {
+  padding: 0;
+  margin: 0;
+}

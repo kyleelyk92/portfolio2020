@@ -1,0 +1,48 @@
+// Utilities
+@import "../../variables.scss";
+/*$grey: #1e1e24;
+$red: #92140c;
+$white: #fff8f0;
+$peach: #ffcf99;
+$blue: #111d4a; */
+.header-main {
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $grey;
+
+  .content-right {
+    button {
+      min-width: 100px;
+    }
+    width: 50vw;
+    display: flex;
+    .button-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .header-button {
+      background-color: $white;
+      color: $grey;
+      border-color: $peach;
+      min-width: 80px;
+    }
+    .header-button:active {
+      border-color: $peach;
+    }
+    .header-button:focus {
+      box-shadow: 0 0 0 0.2rem $red;
+    }
+  }
+}
+
+.active-link {
+  background-color: $peach;
+}
