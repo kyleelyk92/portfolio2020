@@ -1,0 +1,12 @@
+<p>projects works!</p>
+
+<router-outlet></router-outlet>
+
+<div *ngFor="let project of projects">
+  <app-project
+    [name]="project.name"
+    [description]="project.description"
+    [skillsUsed]="project.skillsUsed"
+  >
+  </app-project>
+</div>

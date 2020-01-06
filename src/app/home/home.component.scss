@@ -1,0 +1,35 @@
+@import "../variables.scss";
+/*$grey: #1e1e24;
+$red: #92140c;
+$white: #fff8f0;
+$peach: #ffcf99;
+$blue: #111d4a; */
+
+.arrow {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  background-color: $peach;
+  box-shadow: 1px 1px 1px black;
+  position: absolute;
+}
+
+.right-arrow {
+  background-image: url("../../assets/assets/arrow-right.jpg");
+  right: 10%;
+  top: 45%;
+}
+
+.left-arrow {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../../assets/assets/arrow-left.jpg");
+  width: 100px;
+  height: 100px;
+  background-color: $peach;
+  box-shadow: 1px 1px 1px black;
+  position: absolute;
+  left: 10%;
+  top: 45%;
+}

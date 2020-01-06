@@ -9,7 +9,7 @@ $blue: #111d4a; */
   top: 0;
   width: 100vw;
   height: 10vh;
-  position: static;
+  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -42,7 +42,9 @@ $blue: #111d4a; */
     }
   }
 }
-
+.logo {
+  background-color: $peach;
+}
 .active-link {
   background-color: $peach;
 }

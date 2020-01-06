@@ -1,0 +1,16 @@
+<div class="project-main">
+  <h3>{{ name }}</h3>
+  <div class="description">
+    {{ description }}
+  </div>
+  <img
+    src="../../../assets/assets/project-placeholder.png"
+    alt="placeholder image"
+  />
+
+  <ul>
+    <li *ngFor="let skill of skillsUsed">
+      {{ skill }}
+    </li>
+  </ul>
+</div>

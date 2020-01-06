@@ -27,10 +27,18 @@
       >
         Home Component
       </button>
-      <button mat-flat-button>Five</button>
-      <button mat-flat-button>Buttons</button>
+      <button
+        mat-flat-button
+        [routerLink]="['', 'projects']"
+        routerLinkActive="active-link"
+        mat-flat-button
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Projects
+      </button>
+      <button mat-flat-button>Skills</button>
       <button mat-flat-button>
-        Lo
+        Contact
       </button>
     </div>
   </div>

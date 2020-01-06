@@ -9,7 +9,12 @@ import { FooterComponent } from "./template/footer/footer.component";
 import { PageComponent } from "./page/page.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { MatButtonModule } from "@angular/material/button";
-import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LandingPageComponent } from "./landing-page/landing-page.component";
+import { ProjectsComponent } from "./projects/projects.component";
+import { ProjectComponent } from "./projects/project/project.component";
+import { ContactComponent } from "./contact/contact.component";
+import { SkillsComponent } from "./skills/skills.component";
+import { CommonModule } from "@angular/common";
 
 @NgModule({
   declarations: [
@@ -18,9 +23,14 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     HeaderComponent,
     FooterComponent,
     PageComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ProjectsComponent,
+    ProjectComponent,
+    ContactComponent,
+    SkillsComponent
   ],
   imports: [
+    CommonModule,
     MatButtonModule,
     MatSliderModule,
     BrowserModule,
