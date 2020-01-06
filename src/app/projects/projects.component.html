@@ -1,12 +1,24 @@
-<p>projects works!</p>
-
 <router-outlet></router-outlet>
 
-<div *ngFor="let project of projects">
+<div class="project-list" *ngFor="let project of projects">
   <app-project
+    (click)="openModal(project)"
     [name]="project.name"
     [description]="project.description"
     [skillsUsed]="project.skillsUsed"
   >
   </app-project>
 </div>
+
+<button
+  [routerLink]="['', 'home']"
+  mat-fab
+  alt=""
+  class="left-arrow arrow"
+></button>
+<button
+  [routerLink]="['', 'skills']"
+  mat-fab
+  alt=""
+  class="right-arrow arrow"
+></button>

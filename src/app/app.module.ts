@@ -1,3 +1,4 @@
+import { ProjectModalComponent } from "./projects/project-modal/project-modal.component";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { MatSliderModule } from "@angular/material/slider";
@@ -15,6 +16,7 @@ import { ProjectComponent } from "./projects/project/project.component";
 import { ContactComponent } from "./contact/contact.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { CommonModule } from "@angular/common";
+import { MatDialogModule } from "@angular/material/dialog";
 
 @NgModule({
   declarations: [
@@ -27,9 +29,12 @@ import { CommonModule } from "@angular/common";
     ProjectsComponent,
     ProjectComponent,
     ContactComponent,
-    SkillsComponent
+    SkillsComponent,
+    ProjectModalComponent
   ],
+  entryComponents: [ProjectModalComponent],
   imports: [
+    MatDialogModule,
     CommonModule,
     MatButtonModule,
     MatSliderModule,
