@@ -36,8 +36,22 @@
       >
         Projects
       </button>
-      <button mat-flat-button>Skills</button>
-      <button mat-flat-button>
+      <button
+        mat-flat-button
+        [routerLink]="['', 'skills']"
+        routerLinkActive="active-link"
+        mat-flat-button
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Skills
+      </button>
+      <button
+        mat-flat-button
+        [routerLink]="['', 'contact']"
+        routerLinkActive="active-link"
+        mat-flat-button
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
         Contact
       </button>
     </div>

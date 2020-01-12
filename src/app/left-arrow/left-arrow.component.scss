@@ -4,24 +4,7 @@ $medium-green: #92140c;
 $dark-green: #fff8f0;
 $medium-grey: #ffcf99;
 $light-green: #111d4a; */
-
-.arrow {
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100px;
-  height: 100px;
-  background-color: $medium-grey;
-  box-shadow: 1px 1px 1px black;
-  position: absolute;
-}
-
-.right-arrow {
-  background-image: url("../../assets/assets/arrow-right.jpg");
-  right: 10%;
-  top: 45%;
-}
-
-.left-arrow {
+.left-arrow-button {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("../../assets/assets/arrow-left.jpg");
@@ -32,4 +15,5 @@ $light-green: #111d4a; */
   position: absolute;
   left: 10%;
   top: 45%;
+  border-radius: 50%;
 }

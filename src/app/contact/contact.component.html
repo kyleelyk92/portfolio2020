@@ -1,1 +1,31 @@
-<p>contact works!</p>
+<app-left-arrow routerLink="/skills"> </app-left-arrow>
+
+<div class="container">
+  <h1>Contact Form</h1>
+  <form (ngSubmit)="onSubmit(heroForm)" #heroForm="ngForm">
+    <div class="form-group">
+      <label for="alterEgo">Name</label>
+      <input
+        ngModel
+        name="senderName"
+        type="text"
+        class="form-control"
+        id="alterEgo"
+      />
+    </div>
+    <div class="form-group">
+      <label for="name">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        required
+        ngModel
+        name="senderEmail"
+      />
+    </div>
+
+    <textarea ngModel name="content" matNativeControl></textarea>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

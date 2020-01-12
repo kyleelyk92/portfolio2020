@@ -1,13 +1,13 @@
 @import "../../variables.scss";
-/*$grey: #1e1e24;
-$red: #92140c;
-$white: #fff8f0;
-$peach: #ffcf99;
-$blue: #111d4a; */
+/*$dark-grey: #1e1e24;
+$medium-green: #92140c;
+$dark-green: #fff8f0;
+$medium-grey: #ffcf99;
+$light-green: #111d4a; */
 .footer-main {
   position: fixed;
   bottom: 0;
   width: 100vw;
   height: 8vh;
-  background-color: $peach;
+  background-color: $medium-grey;
 }

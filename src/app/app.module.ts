@@ -17,6 +17,12 @@ import { ContactComponent } from "./contact/contact.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { CommonModule } from "@angular/common";
 import { MatDialogModule } from "@angular/material/dialog";
+import { LeftArrowComponent } from "./left-arrow/left-arrow.component";
+import { RightArrowComponent } from "./right-arrow/right-arrow.component";
+
+import { NgbModule } from "../../node_modules/@ng-bootstrap/ng-bootstrap";
+import { FormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -30,17 +36,22 @@ import { MatDialogModule } from "@angular/material/dialog";
     ProjectComponent,
     ContactComponent,
     SkillsComponent,
-    ProjectModalComponent
+    ProjectModalComponent,
+    LeftArrowComponent,
+    RightArrowComponent
   ],
   entryComponents: [ProjectModalComponent],
   imports: [
+    FormsModule,
+    NgbModule,
     MatDialogModule,
     CommonModule,
     MatButtonModule,
     MatSliderModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

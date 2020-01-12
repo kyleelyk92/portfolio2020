@@ -1,10 +1,10 @@
 // Utilities
 @import "../../variables.scss";
-/*$grey: #1e1e24;
-$red: #92140c;
-$white: #fff8f0;
-$peach: #ffcf99;
-$blue: #111d4a; */
+/*$dark-grey: #1e1e24;
+$medium-green: #92140c;
+$dark-green: #fff8f0;
+$medium-grey: #ffcf99;
+$light-green: #111d4a; */
 .header-main {
   top: 0;
   width: 100vw;
@@ -14,7 +14,7 @@ $blue: #111d4a; */
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: $grey;
+  background-color: $dark-grey;
 
   .content-right {
     button {
@@ -29,22 +29,22 @@ $blue: #111d4a; */
       justify-content: space-around;
     }
     .header-button {
-      background-color: $white;
-      color: $grey;
-      border-color: $peach;
+      background-color: $dark-green;
+      color: $dark-grey;
+      border-color: $medium-grey;
       min-width: 80px;
     }
     .header-button:active {
-      border-color: $peach;
+      border-color: $medium-grey;
     }
     .header-button:focus {
-      box-shadow: 0 0 0 0.2rem $red;
+      box-shadow: 0 0 0 0.2rem $medium-green;
     }
   }
 }
 .logo {
-  background-color: $peach;
+  background-color: $medium-grey;
 }
 .active-link {
-  background-color: $peach;
+  background-color: $medium-grey;
 }

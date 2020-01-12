@@ -1,9 +1,9 @@
 @import "../../variables.scss";
-/*$grey: #1e1e24;
-$red: #92140c;
-$white: #fff8f0;
-$peach: #ffcf99;
-$blue: #111d4a; */
+/*$dark-grey: #1e1e24;
+$medium-green: #92140c;
+$dark-green: #fff8f0;
+$medium-grey: #ffcf99;
+$light-green: #111d4a; */
 
 .project-main {
   display: flex;
@@ -13,4 +13,7 @@ $blue: #111d4a; */
   margin: auto;
   margin-bottom: 20vh;
   width: 50vw;
+  background-color: rgba($color: $medium-green, $alpha: 0.6);
+  width: 90%;
+  padding: 40px 0 40px 0;
 }
