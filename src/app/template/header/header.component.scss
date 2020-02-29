@@ -8,13 +8,14 @@ $light-green: #111d4a; */
 .header-main {
   top: 0;
   width: 100vw;
-  height: 10vh;
+  height: 14vh;
   position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   background-color: $dark-grey;
+  z-index: 50000;
 
   .content-right {
     button {

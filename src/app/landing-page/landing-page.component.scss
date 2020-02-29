@@ -7,7 +7,7 @@ $light-green: #111d4a; */
 
 .main-container {
   width: 100vw;
-  height: 82vh;
+  height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -16,15 +16,25 @@ $light-green: #111d4a; */
   }
 }
 .carousel-caption {
+  font-family: Lato;
+  font-weight: 300;
+  font-style: italic;
   margin:auto;
   text-align: center;
   color: white;
   font-size: 40px;
   text-shadow: 2px 2px 8px #000000;
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 50px;
+  padding: 12px;
   margin-bottom: 12%;
-  width: 50%;
+  width: 400px;
+  border: black solid 2px;
+
+  h2 {
+  height: 200px;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  }
 }
 .right-arrow {
   background-repeat: no-repeat;
@@ -38,7 +48,9 @@ $light-green: #111d4a; */
   right: 10%;
   top: 45%;
 }
-
+.picsum-img-wrapper {
+  height: 86vh;
+}
 .carousel {
   margin: auto;
   display: flex;
@@ -46,11 +58,10 @@ $light-green: #111d4a; */
   z-index: -5;
   width: 100vw;
   overflow-y: hidden;
-  height: 82vh;
+  height: 86vh;
   img {
     width: 100%;
-    height: 82vh;
-    display: block; /* remove extra space below image */
+    height: 100%;
   }
 }
 

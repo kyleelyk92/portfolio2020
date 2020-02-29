@@ -9,6 +9,17 @@ import { NgbCarouselConfig } from "../../../node_modules/@ng-bootstrap/ng-bootst
 export class LandingPageComponent implements OnInit {
   numbers = [
     this.getRandomNumber(),
+    this.getRandomNumber(),
+    this.getRandomNumber(),
+    this.getRandomNumber(),
+    this.getRandomNumber(),
+  ];
+  captions = [
+    'Welcome to my Website!',
+    'My name is Kyle',
+    "I'm a Web Developer",
+    'Here you can check out some of my projects',
+    'If you want to reach me, go to my visit my Contact page'
   ];
   images = this.numbers.map(n => `https://picsum.photos/id/${n}/900/500`);
 

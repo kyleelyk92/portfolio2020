@@ -5,13 +5,12 @@
 
   <ngb-carousel class="carousel" *ngIf="images" [showNavigationArrows]="showNavigationArrows"
     [showNavigationIndicators]="showNavigationIndicators">
-    <ng-template ngbSlide *ngFor="let image of images">
+    <ng-template ngbSlide *ngFor="let image of images; index as i">
       <div class="picsum-img-wrapper">
         <img [src]="image" alt="Random slide" />
       </div>
       <div class="carousel-caption">
-        <h3>Second slide label</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h2>{{captions[i]}}</h2>
       </div>
     </ng-template>
   </ngb-carousel>
