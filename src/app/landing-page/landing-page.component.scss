@@ -11,8 +11,21 @@ $light-green: #111d4a; */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  img {
+  filter: blur(4px);
+  }
 }
-
+.carousel-caption {
+  margin:auto;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  text-shadow: 2px 2px 8px #000000;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 50px;
+  margin-bottom: 12%;
+  width: 50%;
+}
 .right-arrow {
   background-repeat: no-repeat;
   background-position: center;
@@ -33,8 +46,19 @@ $light-green: #111d4a; */
   z-index: -5;
   width: 100vw;
   overflow-y: hidden;
-  max-height: 100%;
+  height: 82vh;
   img {
     width: 100%;
+    height: 82vh;
+    display: block; /* remove extra space below image */
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .carousel-item {
+    height: 100vh;
+  }
+  img {
+    height: 100vh;
   }
 }

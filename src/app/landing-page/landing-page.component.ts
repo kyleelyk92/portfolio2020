@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { CarouselModule, WavesModule } from "angular-bootstrap-md";
 import { NgbCarouselConfig } from "../../../node_modules/@ng-bootstrap/ng-bootstrap";
 
 @Component({
@@ -8,7 +7,10 @@ import { NgbCarouselConfig } from "../../../node_modules/@ng-bootstrap/ng-bootst
   styleUrls: ["./landing-page.component.scss"]
 })
 export class LandingPageComponent implements OnInit {
-  images = [1055, 194, 368].map(n => `https://picsum.photos/id/${n}/900/500`);
+  numbers = [
+    this.getRandomNumber(),
+  ];
+  images = this.numbers.map(n => `https://picsum.photos/id/${n}/900/500`);
 
   showNavigationArrows = false;
   showNavigationIndicators = true;
@@ -18,5 +20,8 @@ export class LandingPageComponent implements OnInit {
     config.showNavigationIndicators = true;
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
+  getRandomNumber() {
+    return Math.floor(Math.random() * 1000);
+  }
 }

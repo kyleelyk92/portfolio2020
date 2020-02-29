@@ -6,9 +6,9 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 export class EmailerService {
   constructor(private http: HttpClient) {}
 
-  sendEmail(fromEmail: string, senderName: string, content: string) {
+  sendEmail(fromEmail: string, from: string, messageBody: string) {
     console.log("sending request to server");
-    const url = "http://localhost:3000";
+    const url = "http://138.197.197.67:3000";
     const httpOptions = {
       headers: new HttpHeaders({
         // these are just placeholder and don't do anything
@@ -17,18 +17,21 @@ export class EmailerService {
       })
     };
     const body = {
-      content,
-      senderName,
+      from,
+      messageBody,
       fromEmail
     };
 
-    const myres = this.http.get(url, { responseType: "text" }).subscribe({
-      next(response) {
-        console.log(response);
-      },
-      error(msg) {
-        console.log("error in getting response", msg);
-      }
-    });
+    console.log(body);
+    const myres = this.http
+      .post(url, body, { responseType: "text" })
+      .subscribe({
+        next(response) {
+          console.log(response);
+        },
+        error(msg) {
+          console.log("error in getting response", msg);
+        }
+      });
   }
 }
