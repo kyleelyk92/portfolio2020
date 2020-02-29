@@ -20,6 +20,9 @@ $light-green: #111d4a; */
     button {
       min-width: 100px;
     }
+    button:hover {
+      background-color: $dark-green;
+    }
     width: 50vw;
     display: flex;
     .button-container {
